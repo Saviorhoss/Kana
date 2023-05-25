@@ -4,7 +4,7 @@ import os
 
 
 class Config(object):
-    API_ID = os.environ.get("API_ID")
+    API_ID = int(os.environ.get("API_ID", 14699743))
     API_HASH = os.environ.get("API_HASH")
     BOT_TOKEN = os.environ.get("BOT_TOKEN")
     SESSION_NAME = os.environ.get("SESSION_NAME", "Video-Merge-Bot")
@@ -17,7 +17,7 @@ class Config(object):
     STREAMTAPE_API_PASS = os.environ.get("STREAMTAPE_API_PASS")
     MONGODB_URI = os.environ.get("MONGODB_URI")
     BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
-    BOT_OWNER = int(os.environ.get("BOT_OWNER", 1445283714))
+    BOT_OWNER = int(os.environ.get("BOT_OWNER", 5059280908))
 
     START_TEXT = """
 Hi Unkil, I am Video Merge Bot!
